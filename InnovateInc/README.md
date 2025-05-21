@@ -13,8 +13,42 @@ Here’s a visually polished GitHub README version of your answer, focusing on c
 
 ---
 
-great, now adjust this part of the aws accounts to have these more accounts:
-Payment Root Account/Managment Organizations Account, Logging/Observability Account, Security Account, return only this part in a beatifull way for a readme
+Here's the beautifully formatted AWS accounts section with your requested additions:
+
+## 🔷 **1. Cloud Environment Structure**  
+### **Recommended AWS Accounts**  
+
+| Account Type                  | Purpose                          | Key Features                     | Justification                  |
+|-------------------------------|----------------------------------|----------------------------------|--------------------------------|
+| **Payment Root Account**      | Top-level billing & organizations | 💳 Single payment method         | Centralized cost tracking      |
+| **Management (Orgs) Account** | AWS Organizations management     | 🏛️ SCPs, service control policies | Enforce guardrails across all  |
+| **Security Account**          | Central security tools           | 🛡️ GuardDuty, Security Hub, IAM  | Unified security monitoring    |
+| **Logging/Observability**     | Cross-account logs & metrics     | 📊 CloudTrail, CloudWatch, Grafana| Single pane of glass for ops   |
+| **Production**                | Live customer-facing workloads   | 🔐 Strict IAM, limited access    | Isolates critical workloads    |
+| **Staging**                   | Pre-production testing           | 🧪 Prod-like data, WAF-enabled   | Safe validation before deploy  |
+| **Development**               | CI/CD pipelines & dev sandboxes  | 💻 Broad dev permissions         | Faster iteration cycles        |
+| **Shared Services**           | Central ECR, Transit Gateway     | 🛠 Cross-account resources       | Eliminates duplication         |
+
+**Account Hierarchy**  
+```text
+Payment Root (No workloads)
+├─ Management (Orgs)
+├─ Security
+├─ Logging
+├─ Production
+├─ Staging  
+├─ Development
+└─ Shared Services
+```
+
+**Key Benefits**  
+- 🔒 **Enhanced Security**: Dedicated security account for threat detection  
+- 📈 **Better Observability**: All logs flow to central logging account  
+- 💰 **Cost Control**: Root account for consolidated billing  
+- 🏛️ **Governance**: SCPs enforced via management account  
+
+*Note: All accounts connect via AWS Organizations with service control policies (SCPs) applied from the management account.*
+e
 ---
 
 ## 🌐 **2. Network Design**  
