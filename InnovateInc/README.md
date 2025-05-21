@@ -13,21 +13,8 @@ Here’s a visually polished GitHub README version of your answer, focusing on c
 
 ---
 
-## 🔷 **1. Cloud Environment Structure**  
-### **Recommended AWS Accounts**  
-
-| Account Type       | Purpose                          | Key Features                     | Justification                  |
-|--------------------|----------------------------------|----------------------------------|--------------------------------|
-| **Production**     | Live customer-facing workloads   | 🔐 Strict IAM, limited access    | Isolates critical workloads    |
-| **Staging**        | Pre-production testing           | 🧪 Prod-like data, WAF-enabled   | Safe validation before deploy  |
-| **Development**    | CI/CD pipelines & dev sandboxes  | 💻 Broad dev permissions         | Faster iteration cycles        |
-| **Shared Services**| Central IAM/ECR/logging          | 🛠 Cross-account management      | Eliminates duplication         |
-
-**Why AWS?**  
-✔ **Security**: Mature IAM & compliance certifications  
-✔ **Cost Control**: Reserved/Spot instance flexibility  
-✔ **Isolation**: Reduced blast radius via multi-account  
-
+great, now adjust this part of the aws accounts to have these more accounts:
+Payment Root Account/Managment Organizations Account, Logging/Observability Account, Security Account, return only this part in a beatifull way for a readme
 ---
 
 ## 🌐 **2. Network Design**  
