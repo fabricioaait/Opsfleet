@@ -48,7 +48,7 @@ Payment Root (No workloads)
 - 🏛️ **Governance**: SCPs enforced via management account  
 
 *Note: All accounts connect via AWS Organizations with service control policies (SCPs) applied from the management account.*
-e
+
 ---
 
 ## 🌐 **2. Network Design**  
