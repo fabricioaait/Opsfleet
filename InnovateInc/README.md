@@ -22,7 +22,7 @@ Here's the beautifully formatted AWS accounts section with your requested additi
 |-------------------------------|----------------------------------|----------------------------------|--------------------------------|
 | **Payment Root Account**      | Top-level billing & organizations | 💳 Single payment method         | Centralized cost tracking      |
 | **Management (Orgs) Account** | AWS Organizations management     | 🏛️ SCPs, service control policies | Enforce guardrails across all  |
-| **Security Account**          | Central security tools           | 🛡️ GuardDuty, Security Hub, IAM, Third party tools  | Unified security monitoring    |
+| **Security Account**          | Central security tools           | 🛡️ GuardDuty, Security Hub, IAM, Third-party tools  | Unified security monitoring    |
 | **Logging/Observability**     | Cross-account logs & metrics     | 📊 CloudTrail, CloudWatch, Grafana| Single pane of glass for ops   |
 | **Production**                | Live customer-facing workloads   | 🔐 Strict IAM, limited access    | Isolates critical workloads    |
 | **Staging**                   | Pre-production testing           | 🧪 Prod-like data, WAF-enabled   | Safe validation before deploy  |
