@@ -117,4 +117,3 @@ Payment Root (No workloads)
 
 --- 
 
-**Note**: Copy-paste this into GitHub – it renders perfectly! No diagrams, just clean Markdown tables, emojis, and headers.
